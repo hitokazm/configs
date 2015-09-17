@@ -119,15 +119,21 @@ alias roi='ssh -X roi'
 alias jim='ssh -X jim'
 alias lenovo='ssh -X lenovo'
 alias aml='ssh -X aml'
-JYTHON_HOME=$HOME/Tools/jython2.7b3
-JYTHONPATH=$JYTHON_HOME/Lib/:$JYTHON_HOME/Lib/site-packages:$JYTHON_HOME/javalib
+JYTHON_HOME=/usr/local/lib/jython2.7
+JYTHONPATH=$JYTHON_HOME/Lib/:$JYTHON_HOME/Lib/site-packages:$JYTHON_HOME/javalib:$HOME/Tools/javalib
 source ~/.fzf.bash
 alias fzf='~/.fzf/fzf'
 alias git-latexdiff='~/Tools/git/git-latexdiff/git-latexdiff'
 alias three='terminator -m -l "'"three windows"'" &' 
 alias lly="ls -lh --time-style=long-iso"
-alias jython27="~/Tools/jython2.7b3/jython"
-alias jython25="/usr/bin/jython"
-alias jython="$jython25"
-alias jythonconsole="$JYTHON_HOME/jython ~/Tools/jythonconsole/console.py"
+#alias jython="$JYTHON_HOME/bin/jython"
+#alias jython25="/usr/bin/jython"
+#alias jython="$jython25"
+#alias jythonconsole="$JYTHON_HOME/jython ~/Tools/jythonconsole/console.py"
 alias lls="ls -lAh"
+alias java9="/usr/lib/jvm/java-9-oracle/bin/java"
+kulla=$HOME/Tools/java9/kulla-0.610-20150704005845.jar
+alias jshell="java9 -jar $kulla"
+alias quit='exit'
+
+export CDPATH=/media/pdrive/TranslationSystems/TechnicalSupport:/media/pdrive/TranslationSystems/TechnicalSupport/DataProject

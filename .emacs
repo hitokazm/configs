@@ -6,7 +6,7 @@
 (set-scroll-bar-mode 'right)
 
 (set-face-attribute'default nil
-			    :family "Source Code Pro Medium" ;; font
+			    :family "Consolas" ;; font
 			    :height 112);; font size
 
 (set-fontset-font

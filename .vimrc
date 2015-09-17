@@ -8,6 +8,7 @@ set rtp+=~/.fzf
 set history=200
 set spell
 set spelllang=en_us
+set foldmethod=syntax
 
 let NERDSpaceDelims = 1
 nmap ,, <Plug>NERDCommenterToggle
@@ -55,6 +56,8 @@ noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
 " substitute for esc
 noremap <C-l> <esc>
 noremap! <C-l> <esc>
+map <f12> :!start /min ctags -R .<cr>
+
 " open split window
 au FileType unite nnoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
 au FileType unite inoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
