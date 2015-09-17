@@ -40,6 +40,9 @@ NeoBundle 'scrooloose/syntastic.git'
 " 
 NeoBundle 'The-NERD-Commenter'
 
+" xml plugin
+NeoBundle 'sukima/xmledit'
+
 """"""""""""""""""""""""""
 " Unite.vim Configurations
 """"""""""""""""""""""""""
@@ -114,5 +117,11 @@ let g:syntastic_python_checkers=['python']
 
 let g:indentLine_color_term = 239
 let g:indentLine_char = '¦'
+
+"""""""""""""""""""
+" xmledit settings
+"""""""""""""""""""
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
 
 set rtp+=~/.fzf
